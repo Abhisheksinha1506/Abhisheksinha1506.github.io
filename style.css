@@ -1,0 +1,87 @@
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker:400,500);
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.weather-card {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.quote-card {
+  background-color: #2196F3;
+  color: white;
+}
+
+.got-quote-card {
+  background-color: #673AB7;
+  color: white;
+}
+/* Set a default font size and type */
+body {
+            font-family: 'Permanent+Marker', sans-serif;
+            font-weight: 400;
+}
+
+/* Set the background color as a random gradient */
+body {
+  background: linear-gradient(to right,#2de4ba,#b8a40e);
+}
+
+/* Set the container to flex and wrap items on smaller screens */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Set the height of the cards */
+.card {
+  height: 200px;
+}
+
+/* Reverse the order of the cards on smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+}
+
+/* Set the styles for the Dublin Weather card */
+.weather-card {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Set the styles for the Ron Swanson Quote card */
+.quote-card {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Set the styles for the Game of Thrones Quote card */
+.got-quote-card {
+  background-color: #673AB7;
+  color: white;
+}
