@@ -44,7 +44,7 @@ body {
 
 /* Set the background color as a random gradient */
 body {
-  background: linear-gradient(to right,#2de4ba,#b8a40e);
+  background: #F0F0F0;
 }
 
 /* Set the container to flex and wrap items on smaller screens */
@@ -65,6 +65,7 @@ body {
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column-reverse;
+    font-size: large;
   }
 }
 
